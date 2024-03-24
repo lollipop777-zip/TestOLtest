@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLtest</title>
+    <style>
+      @media(max-width:767px) {
+        #reserve{
+          height: 90px;
+        }
+        #reserveBb{
+          height: 90px;
+          background-image: url(./assets/09-lH66DElt.png);
+          background-position: center;
+        }
+        #N{
+          height: 600px;
+        }
+        #Notice{
+          height: 600px;
+        }
+        #notic{
+          height: 400px !important;
+          width: 350px !important;
+        }
+        #Bottom{
+          height: 90px;
+        }
+      }
+      
+      @media(max-width:992px){
+        #Notice{
+          background-image: url(./assets/08-D2pbj8r6.jpg);
+        }
+        #notic{
+          height: 550px;
+        }
+        .reservePic{
+          width: 80%;
+        }
+        .presentPic{
+          width: 100%;
+        }
+      }
+
+      
+      @media screen {
+
+          body {
+          width: 100%;
+          background-color: white;
+          font-family: 'BaskervilleNo.2Bold';
+          }
+          .reserveC{
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .reserveB{
+            background-image: url(./assets/02-CSsQU_et.png);
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 350px;
+            height: 125px;
+          }
+          .reserveB:hover{
+            background-image: url(./assets/03-DjW6_trU.png);
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 350px;
+            height: 125px;
+          }
+          .N-c{
+            height: 950px;
+          }
+          .Notice-c{
+            height: 950px;
+            background-image: url(./assets/04-CR5FCGk9.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            position: relative;
+          }
+          .notic-c{
+            height: 75%;
+            width: 60%;
+            position: absolute;
+            top: 0;             
+            bottom: 0;           
+            left: 0;        
+            right: 0;
+            margin: auto;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .Re01{
+            text-align: center;
+          }
+          .success{
+            background-image: url(./assets/06-BsL1FPGb.png);
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 140px;
+            height: 60px;
+          }
+          .bottomm{
+            height: 140px;
+            background-color: #041235;
+          }
+          
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-C8R7yiNw.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D6YOZ1Wq.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">風色Online</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="home" style="background-color: #95B2DC;overflow: hidden">
+      <a name="home" >
+        <div class="row" style="display: flex;justify-content: center;align-items: center;">
+          <div class="col-12" style="display: flex;justify-content: center;align-items: center;">
+            <img src="./assets/01-Dsf3XqH1.jpg" style="width:100%;height:auto;object-fit: cover;object-position: center;" >
+          </div>
+          <div class="col-12 reserveC" id="reserve" style="margin-top:2%;margin-bottom: 3%;">
+            <a class="btn reserveB" id="reserveBb" href="#Reserve" role="button"></a>                
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="container-fluid overflow-hidden">
+      <a name="Reserve">
+        <div class="row N-c" id="N">
+          <div class="Notice-c" id="Notice">
+            <div class="notic-c" id="notic">
+              <div class="Re01" style="width: 80%;height: 80%;">
+                <img class="reservePic" src="./assets/05-fU2ck5bX.png" alt="" style="object-position: center;">
+                <div class="input-group mb-3" style="margin-top: 10px;">
+                  <select class="form-select" id="inputGroupSelect02" style="width: 30px;">
+                    <option selected>台灣 886</option>
+                    <option value="1">香港 852</option>
+                    <option value="2">澳門 853</option>
+                  </select>
+                  <input type="text" class="form-control" aria-label="Text input with dropdown button" style="width: 150px;">
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn success" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-top: 10px;">
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">通知</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" style="color: black;">
+                        恭喜你完成預約！
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="present" style="margin-top: 20px;">
+                  <img class="presentPic" src="./assets/07-P38tPgcM.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="bottomm container-fluid overflow-hidden" id="Bottom">
+
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>
